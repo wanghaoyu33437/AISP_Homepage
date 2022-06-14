@@ -1,0 +1,3607 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://ipads.se.sjtu.edu.cn/zh/publications/ -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/share/bootstrap.min.css') }}">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/publications/main.css') }}">
+    <style>hcfy-result.__hcfy__result__loaded__.__hcfy__result__both__ {
+        border: 1px dotted
+    }</style>
+</head>
+<body>
+
+<header class="navbar navbar-fixed-top" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse"
+                    data-target=".bs-navbar-collapse">
+                <span class="sr-only">导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="{{ url_for('index') }}" class="navbar-brand">AISP</a>
+            <span class="hidden-sm hidden-xs navbar-split"></span>
+            <span class="hidden-sm hidden-xs navbar-subtitle">人工智能安全与隐私保护实验室</span>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <!--<li><a href="/info">概况</a></li>-->
+                <li><a href="{{ url_for('publications') }}">论文</a></li>
+                <li><a href="{{ url_for('projects') }}">项目</a></li>
+                <li><a href="{{ url_for('members') }}">成员</a></li>
+                <li><a href="{{ url_for('news') }}">新闻</a></li>
+                <li><a href="{{ url_for('activities') }}">活动</a></li>
+            </ul>
+        </nav>
+    </div><!-- end of container -->
+</header>
+
+<div id="publications-page" class="page container">
+    <!--
+    <div class="page-lang">
+        中文 | <a href="https://ipads.se.sjtu.edu.cn/zh/en/publications">En</a>
+    </div>
+    -->
+    <h1>论文</h1>
+    <hr>
+    <a class="col-xs-6" href="https://ipads.se.sjtu.edu.cn/pub/publication">完整列表</a>
+    <br><br>
+    <label class="col-xs-4" style="color: #2291cd;"><input name="Adversarial_Mathine_Learning" type="checkbox"
+                                                           value="Adversarial_Mathine_Learning" checked="checked"
+                                                           onclick="checkboxOnclick(this)">Adversarial Mathine Learning</label>
+    <label class="col-xs-4" style="color: #2291cd;"><input style="color: #2291cd;" name="Federated_Learning"
+                                                           type="checkbox" value="Federated_Learning" checked="checked"
+                                                           onclick="checkboxOnclick(this)">Federated Learning</label>
+    <label class="col-xs-4" style="color: #2291cd;"><input name="Differential_Privacy" type="checkbox"
+                                                           value="Differential_Privacy" checked="checked"
+                                                           onclick="checkboxOnclick(this)">Differential Privacy</label>
+{#    <label class="col-xs-4" style="color: #2291cd;"><input name="Security_and_Privacy" type="checkbox"#}
+{#                                                           value="Security_and_Privacy" checked="checked"#}
+{#                                                           onclick="checkboxOnclick(this)">Security and Privacy</label>#}
+{#    <label class="col-xs-4" style="color: #2291cd;"><input name="Programming_Languages" type="checkbox"#}
+{#                                                           value="Programming_Languages" checked="checked"#}
+{#                                                           onclick="checkboxOnclick(this)">Programming Languages</label>#}
+{#    <label class="col-xs-4" style="color: #2291cd;"><input name="Verification" type="checkbox" value="Verification"#}
+{#                                                           checked="checked" onclick="checkboxOnclick(this)">Verification</label>#}
+{#    <label class="col-xs-4" style="color: #2291cd;"><input name="Cloud_Computing" type="checkbox"#}
+{#                                                           value="Cloud_Computing" checked="checked"#}
+{#                                                           onclick="checkboxOnclick(this)">Cloud Computing</label>#}
+{#    <label class="col-xs-4" style="color: #2291cd;"><input name="Operating_Systems" type="checkbox"#}
+{#                                                           value="Operating_Systems" checked="checked"#}
+{#                                                           onclick="checkboxOnclick(this)">Operating Systems</label>#}
+{#    <label class="col-xs-4" style="color: #2291cd;"><input name="Mobile_Systems" type="checkbox" value="Mobile_Systems"#}
+{#                                                           checked="checked" onclick="checkboxOnclick(this)">Mobile#}
+{#        Systems</label>#}
+    <br><br><br><br>
+    <div>
+
+
+        <hr>
+    </div>
+    <div class="year">
+        <h3 class="publications-year">2021</h3>
+
+
+        <div class="row publications-group tag-System Virtualization">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Dingji Li
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/zeyu_mi">Zeyu Mi</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                Haibing Guan
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>TwinVisor: Hardware-isolated Confidential Virtual Machines for ARM (preprint)</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>SOSP'21</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/LiSOSP21.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/xingda_wei">Xingda Wei</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/xiating_xie">Xiating Xie</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Characterizing and Optimizing Remote Persistent Memory with RDMA and NVM</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>ATC'21</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/WeiATC21.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/sijie_shen">Sijie Shen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Retrofitting High Availability Mechanism to Tame Hybrid Transaction/Analytical Processing</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>OSDI'21</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/ShenOSDI21.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Multicore Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/jiachen_wang">Jiachen Wang</a>
+
+
+                ,
+
+
+                Ding Ding
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/huan_wang">Huan Wang</a>
+
+
+                ,
+
+
+                Conrad Christensen
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/zhaoguo_wang">Zhaoguo Wang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                Jinyang Li
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Polyjuice: High-Performance Transactions via Learned Concurrency Control</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>OSDI'21</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/WangOSDI21.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Security and Privacy">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/mingyu_li">Mingyu Li</a>
+
+
+                ,
+
+
+                Jinhao Zhu
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/tianxu_zhang">Tianxu Zhang</a>
+
+
+                ,
+
+
+                Cheng Tan
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                Sebastian Angel
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Bringing Decentralized Search to Decentralized Services</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>OSDI'21</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/LiOSDI21.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Security and Privacy">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/erhu_feng">Erhu Feng</a>
+
+
+                ,
+
+
+                Xu Lu
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/dong_du">Dong Du</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/bicheng_yang">Bicheng Yang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/xueqiang_jiang">Xueqiang Jiang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Scalable Memory Protection in the PENGLAI Enclave</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>OSDI'21</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/FengOSDI21.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Security and Privacy">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/mingyu_li">Mingyu Li</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Confidential Serverless Made Efficient with Plug-In Enclaves</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>ISCA'21</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/LiISCA21.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Lei Wang
+
+
+                ,
+
+
+                Qiang Yin
+
+
+                ,
+
+
+                Chao Tian
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/jianbang_yang">Jianbang Yang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                Wenyuan Yu
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/zihang_yao">Zihang Yao</a>
+
+
+                ,
+
+
+                Jingren Zhou
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>FlexGraph: A flexible and efficient distributed framework for GNN training</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>EuroSys'21</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/WangEuroSys21.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Programming Languages">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yanfei_yang">Yanfei Yang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/mingyu_wu">Mingyu Wu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Bridging the Performance Gap for Copy-based Garbage Collectors atop Non-Volatile Memory</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>EuroSys'21</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/YangEuroSys21.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Verification">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Jonas Oberhauser
+
+
+                ,
+
+
+                Rafael Lourenco de Lima Chehab
+
+
+                ,
+
+
+                Diogo Behrens
+
+
+                ,
+
+
+                Ming Fu
+
+
+                ,
+
+
+                Antonio Paolillo
+
+
+                ,
+
+
+                Lilith Oberhauser
+
+
+                ,
+
+
+                Koustubha Bhat
+
+
+                ,
+
+
+                Yuzhong Wen
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                Jaeho Kim
+
+
+                ,
+
+
+                Viktor Vafeiadis
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>VSync: Push-Button Verification and Optimization for Synchronization Primitives on Weak Memory
+                    Models</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>ASPLOS'21</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/OberhauserASPLOS21.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/xingda_wei">Xingda Wei</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/zhaoguo_wang">Zhaoguo Wang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/zhenhan_gong">Zhenhan Gong</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Unifying Timestamp with Transaction Ordering for MVCC with Decentralized Scalar Timestamp</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>NSDI'21</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/WeiNSDI21.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <hr>
+    </div>
+    <div class="year">
+        <h3 class="publications-year">2020</h3>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/xingda_wei">Xingda Wei</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Fast RDMA-based Ordered Key-Value Store using Remote Learned Cache</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>OSDI'20</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/WeiOSDI20.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Cloud Computing">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/tianyi_yu">Tianyi Yu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/qingyuan_liu">Qingyuan Liu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/dong_du">Dong Du</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+                ,
+
+
+                Ziqiang Lu
+
+
+                ,
+
+
+                Pingchao Yang
+
+
+                ,
+
+
+                Chenggang Qin
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Characterizing Serverless Platforms with ServerlessBench</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>SoCC'20</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/YuSoCC20.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Security and Privacy">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/zeyu_mi">Zeyu Mi</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/dingji_li">Dingji Li</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+                ,
+
+
+                Haibing Guan
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>(Mostly) Exitless VM Protection from Untrusted Hypervisor through Disaggregated Nested
+                    Virtualization</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>Security'20</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/MiSecurity20-final.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Operating Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/jinyu_gu">Jinyu Gu</a>
+
+
+                ,
+
+
+                Xinyue Wu
+
+
+                ,
+
+
+                Wentai Li
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/nian_liu">Nian Liu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/zeyu_mi">Zeyu Mi</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Harmonizing Performance and Isolation in Microkernels with Efficient Intra-kernel Isolation and
+                    Communication</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>ATC'20</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/GuATC20.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Programming Languages">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/mingyu_wu">Mingyu Wu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/ziming_zhao">Ziming Zhao</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yanfei_yang">Yanfei Yang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haoyu_li">Haoyu Li</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibing_guan">Haibing Guan</a>
+
+
+                ,
+
+
+                Sanhong Li
+
+
+                ,
+
+
+                Chuansheng Lu
+
+
+                ,
+
+
+                Tongbao Zhang
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Platinum: A CPU-Efficient Concurrent Garbage Collector for Tail-Reduction of Interactive Services</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>ATC'20</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/WuATC20.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Programming Lanugages">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/mingyu_wu">Mingyu Wu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                Hao Zhu
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibing_guan">Haibing Guan</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>GCPersist: An Efficient GC-assisted Lazy Persistency Framework for Resilient Java Applications on
+                    NVM</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>VEE'20</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/WuVEE20.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Cloud Computing">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/dong_du">Dong Du</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/tianyi_yu">Tianyi Yu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+                ,
+
+
+                Guanglu Yan
+
+
+                ,
+
+
+                Chenggang Qin
+
+
+                ,
+
+
+                Qixuan Wu
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Catalyzer: Sub-millisecond Startup for Serverless Computing with Initialization-less Booting</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>ASPLOS'20</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/DuASPLOS20.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Multicore Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/nian_liu">Nian Liu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>No Barrier in the Road: A Comprehensive Study and Optimization of ARM Barriers</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>PPoPP'20</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/LiuPPoPP20.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Multicore Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/chuzhe_tang">Chuzhe Tang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/youyun_wang">Youyun Wang</a>
+
+
+                ,
+
+
+                Gansen Hu
+
+
+                ,
+
+
+                Zhiyuan Dong
+
+
+                ,
+
+
+                Minjie Wang
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>XIndex: A Scalable Learned Index for Multicore Data Storage</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>PPoPP'20</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/TangPPoPP20.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <hr>
+    </div>
+    <div class="year">
+        <h3 class="publications-year">2019</h3>
+
+
+        <div class="row publications-group tag-Multicore Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/mingkai_dong">Mingkai Dong</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/heng_bu">Heng Bu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/jifei_yi">Jifei Yi</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/benchao_dong">Benchao Dong</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Performance and Protection in the ZoFS User-space NVM File System</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>SOSP'19</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/DongSOSP19-rev.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Verification">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/mo_zou">Mo Zou</a>
+
+
+                ,
+
+
+                Haoran Ding
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/dong_du">Dong Du</a>
+
+
+                ,
+
+
+                Ming Fu
+
+
+                ,
+
+
+                Ronghui Gu
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Using Concurrent Relational Logic with Helpers for Verifying the AtomFS File System</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>SOSP'19</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/ZouSOSP19.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/zhaoguo_wang">Zhaoguo Wang</a>
+
+
+                ,
+
+
+                Changgeng Zhao
+
+
+                ,
+
+
+                Shuai Mu
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                Jinyang Li
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>On the Parallels between Paxos and Raft, and how to Port Optimizations</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>PODC'19</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/WangPODC19.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Mobile Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Xiang Gao
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/mingkai_dong">Mingkai Dong</a>
+
+
+                ,
+
+
+                Xie Miao
+
+
+                ,
+
+
+                Wei Du
+
+
+                ,
+
+
+                Chao Yu
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>EROFS: A Compression-friendly Readonly File System for Resource-scarce Devices</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>ATC'19</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/GaoATC19.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Xiating Xie
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/xingda_wei">Xingda Wei</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Pragh: Locality-preserving Graph Traversal with Split Live Migration</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>ATC'19</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/XieATC19.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Multicore Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/jinyu_gu">Jinyu Gu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/qianqian_yu">Qianqian Yu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/xiayang_wang">Xiayang Wang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/zhaoguo_wang">Zhaoguo Wang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+                ,
+
+
+                Haibing Guan
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Pisces: A Scalable and Efficient Persistent Transactional Memory</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>ATC'19</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/GuATC19.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Security and Privacy">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/dong_du">Dong Du</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/zhichao_hua">Zhichao Hua</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>XPC: Architectural Support for Secure and Efficient Cross Process Call</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>ISCA'19</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/DuISCA19.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-System Virtualization">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/wenhao_li">Wenhao Li</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                Long Lu
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>TEEv: Virtualizing Trusted Execution Environments on Mobile Platforms</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>VEE'19</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/LiVEE19.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Programming Languages">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haoyu_li">Haoyu Li</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/mingyu_wu">Mingyu Wu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>ScissorGC: Scalable and Efficient Compaction for Java Full Garbage Collection</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>VEE'19</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/LiHVEE19.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Operating Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/zeyu_mi">Zeyu Mi</a>
+
+
+                ,
+
+
+                Dingji Li
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/zihan_yang">Zihan Yang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/xinran_wang">Xinran Wang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>SkyBridge: Fast and Secure Inter-Process Communication for Microkernels</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>EuroSys'19</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/MiEuroSys19.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <hr>
+    </div>
+    <div class="year">
+        <h3 class="publications-year">2018</h3>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/xingda_wei">Xingda Wei</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/zhiyuan_dong">Zhiyuan Dong</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Deconstructing RDMA-enabled Distributed Transactions: Hybrid is Better!</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>OSDI'18</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/WeiOSDI18.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Programming Languages">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haoyu_li">Haoyu Li</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/mingyu_wu">Mingyu Wu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Analysis and Optimizations of Java Full Garbage Collection</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>APSys'18</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/LiAPSys18.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/siyuan_wang">Siyuan Wang</a>
+
+
+                ,
+
+
+                Chang Lou
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Fast and Concurrent RDF Queries using RDMA-assisted GPU Graph Exploration</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>ATC'18</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/WangATC18.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Security and Privacy">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/zhichao_hua">Zhichao Hua</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/dong_du">Dong Du</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>EPTI: Efficient Defence against Meltdown Attack for Unpatched VMs</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>ATC'18</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/HuaATC18.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Mobile Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Wenhao Li
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/shiyu_luo">Shiyu Luo</a>
+
+
+                ,
+
+
+                Zhichuang Sun
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                Long Lu
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+                ,
+
+
+                Haibing Guan
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>VButton: Practical Attestation of User-driven Operations in Mobile Apps</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>MobiSys'18</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/LiMobiSys18.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Programming Languages">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/mingyu_wu">Mingyu Wu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/ziming_zhao">Ziming Zhao</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haoyu_li">Haoyu Li</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/heting_li">Heting Li</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+                ,
+
+
+                Haibing Guan
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Espresso: Brewing Java For More Non-Volatility with Non-volatile Memory</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>ASPLOS'18</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/WuASPLOS18.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Security and Privacy">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yuming_wu">Yuming Wu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yutao_liu">Yutao Liu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/ruifeng_liu">Ruifeng Liu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+                ,
+
+
+                Haibing Guan
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Comprehensive VM Protection against Untrusted Hypervisor through Retrofitted AMD Memory
+                    Encryption</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>HPCA'18</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/WuHPCA18.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <hr>
+    </div>
+    <div class="year">
+        <h3 class="publications-year">2017</h3>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Yunhao Zhang
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Sub-millisecond Stateful Stream Querying over Fast-evolving Linked Data</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/ZhangSOSP17.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>SOSP'17</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/ZhangSOSP17.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Multicore Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Xiaozhou Zhou
+
+
+                ,
+
+
+                Zhaoguo Wang
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                Jinyang Li
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Extracting More Intra-transaction Parallelism with Work Stealing for OLTP Workloads</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/ZhouAPSys17.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>APSys'17</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/ZhouAPSys17.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-System Virtualization">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/zhichao_hua">Zhichao Hua</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/jinyu_gu">Jinyu Gu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>vTZ: Virtualizing ARM TrustZone</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/HuaSecurity17.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>Security'17</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/HuaSecurity17.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Multicore Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/mingkai_dong">Mingkai Dong</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Soft Updates Made Simple and Fast on Non-volatile Memory</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/DongATC17.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>ATC'17</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/DongATC17.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/xingda_wei">Xingda Wei</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/sijie_shen">Sijie Shen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Replication-driven Live Reconfiguration for Fast Distributed Transaction Processing</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/WeiATC17.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>ATC'17</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/WeiATC17.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Security and Privacy">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/jinyu_gu">Jinyu Gu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/zhichao_hua">Zhichao Hua</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+                ,
+
+
+                Haibing Guan
+
+
+                ,
+
+
+                Jinming Li
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Secure Live Migration of SGX Enclaves on Untrusted Cloud</p>
+
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>DSN'17</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/GuDSN17.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Security and Privacy">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Lei Shi
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yuming_wu">Yuming Wu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                Nathan Dautenhahn
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+                ,
+
+
+                Haibin Guan
+
+
+                ,
+
+
+                Jinming Li
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Deconstructing Xen</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/slides/Nexen-ndss-2017.pdf" target="_blank">[slide]</a>
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/ShiNDSS17.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>NDSS'17</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/ShiNDSS17.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Security and Privacy">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yutao_liu">Yutao Liu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/peitao_shi">Peitao Shi</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/xinran_wang">Xinran Wang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                Haibin Guan
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Transparent and Efficient CFI Enforcement with Intel Processor Trace</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/slides/flowguard-hpca-2017.pptx" target="_blank">[slide]</a>
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>HPCA'17</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/LiuHPCA17.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <hr>
+    </div>
+    <div class="year">
+        <h3 class="publications-year">2016</h3>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/jiaxin_shi">Jiaxin Shi</a>
+
+
+                ,
+
+
+                Youyang Yao
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                Feifei Li
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Fast and Concurrent RDF Queries with RDMA-based Distributed Graph Exploration</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/ShiOSDI16.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>OSDI'16</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/ShiOSDI16.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-System Virtualization">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Liang Liang
+
+
+                ,
+
+
+                Rong Chen
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                KwanJong Park
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Binyu Zang</a>
+
+
+                ,
+
+
+                Haibing Guan
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>A Case for Virtualizing Persistent Memory</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/slides/vpm-socc-2016.pptx" target="_blank">[slide]</a>
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/LiangSoCC16.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>SoCC'16</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/LiangSoCC16.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yanzhe_chen">Yanzhe Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/xingda_wei">Xingda Wei</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/jiaxin_shi">Jiaxin Shi</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Fast and General Distributed Transactions Using RDMA and HTM</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/ChenEuroSys16.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>EuroSys'16</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/ChenEuroSys16.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Programming Languages">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Yang Yu
+
+
+                ,
+
+
+                Tianyang Lei
+
+
+                ,
+
+
+                Weihua Zhang
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                Binyu Zang
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Performance Analysis and Optimization of Full Garbage Collection in Memory-hungry Environment</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/YuVEE16.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>VEE'16</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/YuVEE16.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Heng Zhang
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/mingkai_dong">Mingkai Dong</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Efficient and Available In-memory KV-Store with Hybrid Erasure Coding and Replication</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/ZhangFAST16.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>FAST'16</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/ZhangFAST16.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-System Virtualization">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Qingshu Chen
+
+
+                ,
+
+
+                Liang Liang
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Mitigating Sync Amplification for Copy-on-write Virtual Disk</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/ChenFAST16.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>FAST'16</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/ChenFAST16.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <hr>
+    </div>
+    <div class="year">
+        <h3 class="publications-year">2015</h3>
+
+
+        <div class="row publications-group tag-Security and Privacy">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yutao_liu">Yutao Liu</a>
+
+
+                ,
+
+
+                Tianyu Zhou
+
+
+                ,
+
+
+                Kexin Chen
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Thwarting Memory Disclosure with Efficient Hypervisor-enforced Intra-domain Isolation</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/slides/secage-ccs-2015.pptx" target="_blank">[slide]</a>
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/LiuCCS15.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>CCS'15</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/LiuCCS15.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/xingda_wei">Xingda Wei</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/jiaxin_shi">Jiaxin Shi</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yanzhe_chen">Yanzhe Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Fast In-memory Transaction Processing using RDMA and HTM</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/WeiSOSP15.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>SOSP'15</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/WeiSOSP15.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Security and Privacy">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yutao_liu">Yutao Liu</a>
+
+
+                ,
+
+
+                Haibing Guan
+
+
+                ,
+
+
+                Yunji Chen
+
+
+                ,
+
+
+                Tianshi Chen
+
+
+                ,
+
+
+                Binyu Zang
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Secure outsourcing of virtual appliance</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/XiaTCC15.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>TCC'15</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/XiaTCC15.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Mobile Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Jin Chen
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                Erick Bauman
+
+
+                ,
+
+
+                Zhiqiang Lin
+
+
+                ,
+
+
+                Binyu Zang
+
+
+                ,
+
+
+                Haibing Guan
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>You Shouldn’t Collect My Secrets: Thwarting Sensitive Keystroke Leakage in Mobile IME Apps</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/ChenSecurity15.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>USENIX Security'15</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/ChenSecurity15.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-System Virtualization">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Weihua Zhang
+
+
+                ,
+
+
+                Haojun Wang
+
+
+                ,
+
+
+                Yunping Lu
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                Wenyun Zhao
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>A loosely-coupled full-system multi-core simulation framework</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/ZhangTPDS15.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>TPDS'15</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/ZhangTPDS15.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Multicore Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Zhaoguo Wang
+
+
+                ,
+
+
+                Han Yi
+
+
+                ,
+
+
+                Ran Liu
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/mingkai_dong">Mingkai Dong</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Persistent transactional memory</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/WangCAL15.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>CAL'15</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/WangCAL15.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-System Virtualization">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Wenhao Li
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                Binyu Zang
+
+
+                ,
+
+
+                Haibing Guan
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Reducing World Switches in Virtualized Environment with Flexible Cross-world Calls</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/LiISCA15.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>ISCA'15</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/LiISCA15.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Mobile Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Wenhao Li
+
+
+                ,
+
+
+                Haibo Li
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>AdAttester: Secure Online Advertisement Attestation on Mobile Devices Using TrustZone</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/LiMobiSys15.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>MobiSys'15</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/LiMobiSys15.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/jiaxin_shi">Jiaxin Shi</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yanzhe_chen">Yanzhe Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>PowerLyra: Differentiated Graph Computation and Partitioning on Skewed Graphs <strong>(Best Paper
+                    Award)</strong></p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/ChenEuroSys15.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>EuroSys'15</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/ChenEuroSys15.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Security and Privacy">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yutao_liu">Yutao Liu</a>
+
+
+                ,
+
+
+                Cheng Tan
+
+
+                ,
+
+
+                Mingyang Ma
+
+
+                ,
+
+
+                Haibing Guan
+
+
+                ,
+
+
+                Binyu Zang
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>TinMan: Eliminating Confidential Mobile Data Exposure with Security-oriented Offloading</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/XiaEuroSys15.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>EuroSys'15</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/XiaEuroSys15.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Multicore Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Kaiyuan Zhang
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>NUMA-aware Graph-structured Analytics</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/ZhangPPoPP15.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>PPoPP'15</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/ZhangPPoPP15.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/jiaxin_shi">Jiaxin Shi</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                Binyu Zang
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Bipartite-oriented Distributed Graph Partitioning for Big Learning</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/ChenJCST15.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>JCST'15</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/ChenJCST15.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <hr>
+    </div>
+    <div class="year">
+        <h3 class="publications-year">2014</h3>
+
+
+        <div class="row publications-group tag-Multicore Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yanzhe_chen">Yanzhe Chen</a>
+
+
+                ,
+
+
+                Yin Wang
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                Binyu Zang
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Greedy map generialization by iterative point removal</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/Chensigspatialcup14.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>SIGSPATIAL'14</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/Chensigspatialcup14.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/jiaxin_shi">Jiaxin Shi</a>
+
+
+                ,
+
+
+                Binyu Zang
+
+
+                ,
+
+
+                Haibin Guan
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Bipartite-oriented Distributed Graph Partitioning for Big Learning</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/ChenAPSys14.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>APSys'14</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/ChenAPSys14.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Mobile Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Wenhao Li
+
+
+                ,
+
+
+                Mingyang Ma
+
+
+                ,
+
+
+                Jinchen Han
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                Binyu Zang
+
+
+                ,
+
+
+                Cheng-Kang Chu
+
+
+                ,
+
+
+                Tieyan Li
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Building Trusted Path on Untrusted Device Drivers for Mobile Devices</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/LiAPSys14.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>APSys'14</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/LiAPSys14.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Peng Wang
+
+
+                ,
+
+
+                Kaiyuan Zhang
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                Haibin Guan
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Replication-based Fault-tolerance for Large-scale Graph Processing</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/WangDSN14.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>DSN'14</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/WangDSN14.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Distributed Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/rong_chen">Rong Chen</a>
+
+
+                ,
+
+
+                Xin Ding
+
+
+                ,
+
+
+                Peng Wang
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+                ,
+
+
+                Binyu Zang
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Computation and Communication Efficient Graph Processing with Distributed Immutable View</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/ChenHPDC14.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>HPDC'14</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/ChenHPDC14.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Multicore Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Ran Liu
+
+
+                ,
+
+
+                Heng Zhang
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Scalable Read-mostly Synchronization Using Passive Reader-Writer Locks</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/LiuATC14.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>USENIX ATC'14</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/LiuATC14.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Multicore Systems">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Zhaoguo Wang
+
+
+                ,
+
+
+                Hao Qian
+
+
+                ,
+
+
+                Jinyang Li
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Using Restricted Transactional Memory to Build a Scalable In-Memory Database</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/WangEuroSys14.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>EuroSys'14</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/WangEuroSys14.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-System Virtualization">
+            <div class="col-xs-12 col-sm-2">
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yutao_liu">Yutao Liu</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/yubin_xia">Yubin Xia</a>
+
+
+                ,
+
+
+                Haibing Guan
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Binyu Zang</a>
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/binyu_zang">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>Concurrent and Consistent Virtual Machine Introspection with Hardware Transactional Memory</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/slides/txintro-hpca-2014.pptx" target="_blank">[slide]</a>
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/LiuHPCA14.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>HPCA'14</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/LiuHPCA14.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+        <div class="row publications-group tag-Programming Languages">
+            <div class="col-xs-12 col-sm-2">
+
+
+                Zhijun Hao
+
+
+                ,
+
+
+                Chenning Xie
+
+
+                ,
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/pub/members/haibo_chen">Haibo Chen</a>
+
+
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>X10-FT: Transparent Fault Tolerance for APGAS Language and Runtime</p>
+
+
+                <a href="https://ipads.se.sjtu.edu.cn/zh/cites/HaoParCo14.bib" target="_blank">[cite]</a>
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>ParCo'14</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="https://ipads.se.sjtu.edu.cn/zh/publications/HaoParCo14.pdf"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<script>
+    function checkboxOnclick(checkbox) {
+        var name = checkbox.value;
+        var ele_tag = "";
+        if (name == "System_Virtualization") {
+            ele_tag = ".tag-System";
+        } else if (name == "Distributed_Systems") {
+            ele_tag = ".tag-Distributed";
+        } else if (name == "Multicore_Systems") {
+            ele_tag = ".tag-Multicore";
+        } else if (name == "Security_and_Privacy") {
+            ele_tag = ".tag-Security";
+        } else if (name == "Programming_Languages") {
+            ele_tag = ".tag-Programming";
+        } else if (name == "Verification") {
+            ele_tag = ".tag-Verification";
+        } else if (name == "Cloud_Computing") {
+            ele_tag = ".tag-Cloud";
+        } else if (name == "Operating_Systems") {
+            ele_tag = ".tag-Operating";
+        } else if (name == "Mobile_Systems") {
+            ele_tag = ".tag-Mobile";
+        }
+        $(ele_tag).prop("hidden", !checkbox.checked);
+        $(".year").each(function () {
+            // if  publications-group all hidden then self hidden
+            var should_hidden = true;
+            $(this).children(".publications-group").each(function () {
+                if (!$(this).prop("hidden")) {
+                    should_hidden = false;
+                }
+            })
+            $(this).prop("hidden", should_hidden);
+        });
+
+    }
+</script>
+
+
+<script type="text/javascript" src="{{ url_for('static',filename='JS/share/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename='JS/share/bootstrap.min.js') }}"></script>
+
+
+</body>
+<div style="all: initial;">
+    <div id="__hcfy__" style="all: initial;"></div>
+</div>
+</html>

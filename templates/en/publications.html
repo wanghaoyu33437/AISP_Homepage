@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://ipads.se.sjtu.edu.cn/zh/publications/ -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/share/bootstrap.min.css') }}">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/publications/main.css') }}">
+    <style>hcfy-result.__hcfy__result__loaded__.__hcfy__result__both__ {
+        border: 1px dotted
+    }</style>
+</head>
+<body>
+
+<header class="navbar navbar-fixed-top" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse"
+                    data-target=".bs-navbar-collapse">
+                <span class="sr-only"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           <a href="{{ url_for('index') }}" class="navbar-brand">AISP</a>
+            <span class="hidden-sm hidden-xs navbar-split"></span>
+            <span class="hidden-sm hidden-xs navbar-subtitle">Artificial Intelligence Security and Privacy Protection Lab</span>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{{ url_for('publications') }}">Publications</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('members') }}">Peoples</a></li>
+                <li><a href="{{ url_for('news') }}">News</a></li>
+                <li><a href="{{ url_for('activities') }}">Activities</a></li>
+            </ul>
+        </nav>
+    </div><!-- end of container -->
+</header>
+
+<div id="publications-page" class="page container">
+    <!--
+    <div class="page-lang">
+        中文 | <a href="https://ipads.se.sjtu.edu.cn/zh/en/publications">En</a>
+    </div>
+    -->
+    <h1>Publications</h1>
+    <hr>
+    <a class="col-xs-6" href="{{ url_for('publications') }}">Full List</a>
+    <br><br>
+    <label class="col-xs-4" style="color: #2291cd;"><input name="Adversarial_Mathine_Learning" type="checkbox"
+                                                           value="Adversarial_Mathine_Learning" checked="checked"
+                                                           onclick="checkboxOnclick(this)">Adversarial Mathine Learning</label>
+    <label class="col-xs-4" style="color: #2291cd;"><input style="color: #2291cd;" name="Federated_Learning"
+                                                           type="checkbox" value="Federated_Learning" checked="checked"
+                                                           onclick="checkboxOnclick(this)">Federated Learning</label>
+    <label class="col-xs-4" style="color: #2291cd;"><input name="Differential_Privacy" type="checkbox"
+                                                           value="Differential_Privacy" checked="checked"
+                                                           onclick="checkboxOnclick(this)">Differential Privacy</label>
+    <br><br><br><br>
+    <div>
+
+        <hr>
+    </div>
+    {% for year in years %}
+    <div class="year">
+
+        <h3 class="publications-year">{{ year }}</h3>
+        {% for pub in publications[year] %}
+        <div class="row publications-group tag-{{ pub.tag }} Virtualization">
+            <div class="col-xs-12 col-sm-2">
+
+                {% for a in pub.authors %}
+                    {% if a in author_url.keys() %}
+                        {% if loop.index == 1 %}<a href="{{ author_url[a]}}">{{ a }}</a>{% else %},<a href="{{ author_url[a]}}">{{ a }}</a>{% endif %}
+                        {% else %}
+                            {% if loop.index == 1 %}{{ a }}{% else %},{{ a }}{% endif %}
+                    {% endif %}
+                    {% endfor %}
+            </div>
+            <div class="col-xs-12 col-sm-7 publications-content">
+                <p>{{ pub.title }}</p>
+
+            </div>
+            <div class="col-xs-6 col-sm-1 publications-conference"><strong>{{ pub.conference }}'{{ pub.year }}</strong></div>
+            <div class="col-xs-6 col-sm-2 text-right">
+                <a class="btn btn-default" href="{{ pub.url }}"
+                   target="_blank">PDF</a>
+            </div>
+        </div>
+    {% endfor %}
+        <hr>
+    </div>
+    {% endfor %}
+    </div>
+
+<script>
+    function checkboxOnclick(checkbox) {
+        var name = checkbox.value;
+        var ele_tag = "";
+        if (name == "Adversarial_Mathine_Learning") {
+            ele_tag = ".tag-Adversarial_Mathine_Learning";
+        } else if (name == "Federated_Learning") {
+            ele_tag = ".tag-Federated_Learning";
+        } else if (name == "Multicore_Systems") {
+            ele_tag = ".tag-Multicore";
+        } else if (name == "Security_and_Privacy") {
+            ele_tag = ".tag-Security";
+        } else if (name == "Programming_Languages") {
+            ele_tag = ".tag-Programming";
+        } else if (name == "Verification") {
+            ele_tag = ".tag-Verification";
+        } else if (name == "Cloud_Computing") {
+            ele_tag = ".tag-Cloud";
+        } else if (name == "Operating_Systems") {
+            ele_tag = ".tag-Operating";
+        } else if (name == "Mobile_Systems") {
+            ele_tag = ".tag-Mobile";
+        }
+        $(ele_tag).prop("hidden", !checkbox.checked);
+        $(".year").each(function () {
+            // if  publications-group all hidden then self hidden
+            var should_hidden = true;
+            $(this).children(".publications-group").each(function () {
+                if (!$(this).prop("hidden")) {
+                    should_hidden = false;
+                }
+            })
+            $(this).prop("hidden", should_hidden);
+        });
+
+    }
+</script>
+
+
+<script type="text/javascript" src="{{ url_for('static',filename='JS/share/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename='JS/share/bootstrap.min.js') }}"></script>
+
+
+</body>
+<div style="all: initial;">
+    <div id="__hcfy__" style="all: initial;"></div>
+</div>
+</html>

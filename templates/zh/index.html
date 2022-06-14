@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://ipads.se.sjtu.edu.cn/zh/index.html -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/share/bootstrap.min.css') }}">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='/css/index/main.css') }}">
+    <style>hcfy-result.__hcfy__result__loaded__.__hcfy__result__both__ {
+        border: 1px dotted
+    }</style>
+</head>
+<body>
+
+<header class="navbar navbar-fixed-top" role="banner">
+    <div class="container">
+        <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse"
+                    data-target=".bs-navbar-collapse">
+                <span class="sr-only">导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="{{ url_for('index') }}" class="navbar-brand">AISP</a>
+            <span class="hidden-sm hidden-xs navbar-split"></span>
+            <span class="hidden-sm hidden-xs navbar-subtitle">人工智能安全与隐私保护实验室</span>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <!--<li><a href="/info">概况</a></li>-->
+                <li><a href="{{ url_for('publications') }}">论文</a></li>
+                <li><a href="{{ url_for('projects') }}">项目</a></li>
+                <li><a href="{{ url_for('members') }}">成员</a></li>
+                <li><a href="{{ url_for('news') }}">新闻</a></li>
+                <li><a href="{{ url_for('activities') }}">活动</a></li>
+            </ul>
+        </nav>
+    </div><!-- end of container -->
+</header>
+
+<div id="index-page">
+    <div id="banner" style="height: 737px;">
+        <h1 class="banner-title">AISP</h1>
+
+        <h4 class="banner-subtitle">华中科技大学</h4>
+        <h4 class="banner-subtitle">人工智能安全与隐私保护实验室</h4>
+        {#        <h5 class="banner-lang"><a href="/en">English Version</a></h5>#}
+
+    </div>
+
+    <div id="intro">
+        <div class="scroll-entry scroll-entry-left"></div>
+        <div class="scroll-entry scroll-entry-right"></div>
+        <div class="container">
+            <!--
+            <h5>WELCOME TO IPADS</h5>
+            <p>The institute of parallel and distributed systems (IPADS) conducts research in all aspects of computer systems, with a primary focus on operating systems, system virtualization, programming model and runtime for multicore and distributed systems. Our research also involves other disciplines such as computer architecture, language and compilers. The research themes of IPADS are improving the performance scalability, energy efficiency and dependability of centralized and distributed computer systems.</p>
+            -->
+            <h3>培养精英人才，探索顶尖学术，跻身世界一流</h3>
+            <p>人工智能安全与隐私保护实验室致力于开展高水平研究，解决人工智能算法安全问题。</p>
+            <p>研究方向：</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;机器学习算法安全：针对机器学习训练阶段，研究深度学习模型攻击与防御方法，重点探索针对模型注入攻击、后门攻击的防御技术；针对机器学习应用阶段，研究深度学习模型的欺骗与防御技术，重点探索多媒体数据对抗样本构造与检测方法，有效提高机器学习模型的鲁棒性与可靠性。</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;机器学习数据安全：研究联邦学习场景下的数据保护技术，利用同态加密、差分隐私、可信硬件等安全防护技术，保护机器学习数据的隐私性、完整性与可靠性；研究基于加密数据的信息检索技术，特别关注文本、图像、音视频等多模态数据间的跨媒体查询。</p>
+        </div>
+    </div>
+
+    <div id="news">
+        <h5 class="subtitle news-subtitle">AISP 新闻速递</h5>
+        <div class="container">
+
+
+            <div class="news-row">
+                <div class="date">
+
+                    <h3 style="font-size: 1.5em">置顶</h3>
+
+
+                </div>
+                <h5 class="news-type">MISC</h5>
+                <h5 class="news-content"><p>IPADS公布了2021级的“新生大数据”，包含了2021级实验室新生的录取情况、研究方向、生源分布等信息。想了解我们的话，欢迎点击<a
+                        href="https://mp.weixin.qq.com/s/JiIkqQN-BPPKaUDyV-eYPw">这里</a>一探究竟！</p>
+                </h5>
+            </div>
+
+
+            <div class="news-row">
+                <div class="date">
+
+
+                    <h3>20</h3>
+                    <h5>
+
+                        Mar.
+
+                    </h5>
+
+                </div>
+                <h5 class="news-type">PUBLICATION</h5>
+                <h5 class="news-content"><p>IPADS实验室的论文”Achieving μs-scale Preemption for Concurrent GPU-accelerated DNN
+                    Inferences”被计算机系统领域顶级会议<strong>OSDI2022</strong>接收。该论文提出面向DNN推理任务的强实时高并发GPU调度技术，支持对非实时任务的百微秒级抢占，可将系统整体吞吐量提高了1.1~4.3倍。这是IPADS实验室连续第8年在OSDI/SOSP上发表研究工作。祝贺！
+                </p>
+                </h5>
+            </div>
+
+
+            <div class="news-row">
+                <div class="date">
+
+
+                    <h3>12</h3>
+                    <h5>
+
+                        Mar.
+
+                    </h5>
+
+                </div>
+                <h5 class="news-type">PUBLICATION</h5>
+                <h5 class="news-content"><p>IPADS实验室的论文”A Hardware-Software Co-design for Efficient Intra-Enclave
+                    Isolation”被安全领域著名会议<strong>USENIX Security 2022</strong>接收。该论文提出采用SGX
+                    Enclave内部隔离的思路，单个硬件Enclave中构建多个轻量化的light-enclave，从而能够在安全关键代码与非可信库代码之间提供隔离性。祝贺！</p>
+                </h5>
+            </div>
+
+
+            <div class="news-row">
+                <div class="date">
+
+
+                    <h3>09</h3>
+                    <h5>
+
+                        Mar.
+
+                    </h5>
+
+                </div>
+                <h5 class="news-type">PUBLICATION</h5>
+                <h5 class="news-content"><p>IPADS实验室的两篇论文”Ad Hoc Transactions for Web Applications: The Good, the Bad,
+                    and the Ugly”和”WeTune: Automatic Discovery and Verification of Query Rewrite
+                    Rules”被数据管理领域最高水平会议<strong>SIGMOD 2022</strong>接收。祝贺！</p>
+                </h5>
+            </div>
+
+            <div class="news-row">
+                <div class="date">
+
+
+                    <h3>24</h3>
+                    <h5>
+
+                        Feb.
+
+                    </h5>
+                </div>
+                <h5 class="news-type">MISC</h5>
+                <h5 class="news-content"><p>IPADS公布了2021年秋季学期获得优秀奖学金的名单，共20位同学获奖。向他们表示祝贺！</p>
+                </h5>
+            </div>
+
+            <p class="center">
+                <a href="https://ipads.se.sjtu.edu.cn/zh/news">更多</a>
+            </p>
+        </div>
+    </div>
+
+    <div id="contact">
+        <h5 class="subtitle contact-subtitle">联系我们</h5>
+        <img src="{{ url_for('static',filename='images/home/icon.png') }}">
+        <h5>地址：华中科技大学网络空间安全学院，东西湖区临空港大道，武汉，中国</h5>
+        <h5>Email: <a href="AISP@hust.edu.cn">AISP@hust.edu.cn</a></h5>
+    </div>
+
+</div><!-- endof index-page -->
+
+<script type="text/javascript" src="{{ url_for('static',filename='JS/share/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static',filename='JS/index/index.js') }}"></script>
+<script>
+    // execute when loading
+    window.onload = function () {
+        //console.log("on-load");
+        $(".news-row").each(function () {
+            var is_top = false;
+            $(this).children(".news-content").each(function () {
+                //console.log($(this).context.innerHTML);
+                if ($(this).context.innerHTML.indexOf("置顶") != -1) {
+                    is_top = true;
+                }
+            })
+            // no "置顶" in content then hide it
+            if (!is_top) {
+                // console.log("set hidden for top.");
+                $(this).children(".date").each(function () {
+                    $(this).children(".show-top").each(function () {
+                        $(this).prop("hidden", true);
+                    })
+                })
+            } else {
+                // hide date
+                //console.log("set hidden for date.");
+                $(this).children(".date").each(function () {
+                    $(this).children(".date-html-label").each(function () {
+                        $(this).prop("hidden", true);
+                    })
+                })
+            }
+        })
+    }
+</script>
+
+
+
+
+</body>
+<div style="all: initial;">
+    <div id="__hcfy__" style="all: initial;"></div>
+</div>
+</html>

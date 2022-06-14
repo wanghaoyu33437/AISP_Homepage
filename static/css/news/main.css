@@ -1,0 +1,614 @@
+
+body {
+    font-family: OpenSans, "Microsoft YaHei", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2.25rem
+}
+
+h1 {
+    font-family: OpenSans, "Microsoft YaHei", sans-serif;
+    font-size: 2.5rem;
+    margin: 2.2rem 0 .55rem 0;
+    line-height: 3.75rem
+}
+
+h2 {
+    font-family: OpenSans, "Microsoft YaHei", sans-serif;
+    font-size: 2.2rem;
+    margin: 2rem 0 .5rem 0;
+    line-height: 3.3rem
+}
+
+h3 {
+    font-family: OpenSans, "Microsoft YaHei", sans-serif;
+    font-size: 2rem;
+    margin: 1.8rem 0 .45rem 0;
+    line-height: 3rem
+}
+
+h4 {
+    font-family: OpenSans, "Microsoft YaHei", sans-serif;
+    font-size: 1.8rem;
+    margin: 1.5rem 0 .375rem 0;
+    line-height: 2.7rem
+}
+
+h5 {
+    font-family: OpenSans, "Microsoft YaHei", sans-serif;
+    font-size: 1.5rem;
+    margin: 1.2rem 0 .3rem 0;
+    line-height: 2.25rem
+}
+
+h6 {
+    font-family: OpenSans, "Microsoft YaHei", sans-serif;
+    font-size: 1.3rem;
+    margin: 1rem 0 .25rem 0;
+    line-height: 1.95rem
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    line-height: 2.2rem
+}
+
+ul {
+    font-size: 1.5rem
+}
+
+#index-page .container {
+    max-width: 960px
+}
+
+#index-page .navbar .container {
+    max-width: none
+}
+
+.page {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 75px
+}
+
+.page h1 {
+    color: #999
+}
+
+.page .page-lang {
+    float: right;
+    color: #555
+}
+
+body {
+    background: #fff;
+    text-align: left;
+    overflow-x: hidden
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 8px 16px;
+    transition: 0.5s;
+    border: none
+}
+
+.btn-default {
+    color: #555;
+    background-color: transparent;
+    border: 1px solid #ccc
+}
+
+.btn-primary {
+    color: #f3f3f3;
+    background-color: #2291cd
+}
+
+.btn-primary:hover {
+    background-color: #1b72a1
+}
+
+.btn-primary.disabled, .btn-primary.disabled:hover {
+    background: #42a8e0;
+    cursor: auto
+}
+
+.btn-secondary {
+    color: #f3f3f3;
+    background-color: #35b0ae
+}
+
+.btn-secondary:hover {
+    color: #f3f3f3;
+    background-color: #298987
+}
+
+.center {
+    text-align: center
+}
+
+img {
+    max-width: 100%
+}
+
+.clear-both {
+    clear: both
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white
+}
+
+a:hover {
+    color: #2291cd
+}
+
+.font-weight-normal {
+    font-weight: normal
+}
+
+header.navbar {
+    padding-top: 20px;
+    border-bottom: 1px solid white;
+    margin-bottom: 0;
+    background-color: #005299
+}
+
+header.navbar .nav > li > a:focus, header.navbar .nav > li > a:hover {
+    background-color: transparent
+}
+
+header.navbar .navbar-toggle .icon-bar {
+    background-color: #2291cd
+}
+
+header.navbar .navbar-brand {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold
+}
+
+header.navbar .navbar-split {
+    width: 1px;
+    border-left: 2px solid #ccc;
+    float: left;
+    height: 30px;
+    margin: 10px 0
+}
+
+header.navbar .navbar-subtitle {
+    margin: 15px;
+    color: #d5d5d5;
+    font-size: 1.7rem;
+    display: inline-block;
+    float: left;
+    line-height: 1.5rem
+}
+
+.members-section {
+    text-align: center;
+    margin-bottom: 50px
+}
+
+.members-section h2 {
+    color: #999
+}
+
+.members-section .row .member-group {
+    margin-bottom: 30px
+}
+
+.members-section .row .member-group img {
+    border-radius: 60px;
+    margin-bottom: 10px;
+    width: 120px;
+    transition: 0.5s
+}
+
+.members-section .row .member-group img:hover {
+    border-radius: 0
+}
+
+.members-section .row .member-group .member-name {
+    color: #555;
+    font-size: 1.5rem
+}
+
+.members-section .row .member-group .member-title {
+    color: #999;
+    font-size: 1.2rem;
+    margin-top: 0px
+}
+
+.wf-container {
+    margin: 0 auto
+}
+
+.wf-container:before, .wf-container:after {
+    content: '';
+    display: table
+}
+
+.wf-container:after {
+    clear: both
+}
+
+.wf-box {
+    margin: 10px
+}
+
+.wf-box img {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-bottom-width: 0
+}
+
+.wf-box .date {
+    margin: -0.2rem 0 0 0;
+    color: #999
+}
+
+.wf-box .content {
+    border: 1px solid #ccc;
+    border-top-width: 0;
+    padding: 5px 8px
+}
+
+.wf-box .content h3 {
+    margin: 0
+}
+
+.wf-column {
+    float: left
+}
+
+#activities {
+    margin: 0 -10px
+}
+
+.projects-section {
+    text-align: center;
+    margin-bottom: 50px
+}
+
+.projects-section h2 {
+    color: #999
+}
+
+.projects-section .row .project-group {
+    height: 280px
+}
+
+.projects-section .row .project-group img {
+    margin-bottom: 10px;
+    width: 160px
+}
+
+.projects-section .row .project-group .project-name {
+    color: #555;
+    font-size: 1.5rem
+}
+
+.projects-section .row .project-group .project-title {
+    color: #999;
+    font-size: 1.2rem;
+    margin-top: 3px;
+    line-height: 18px
+}
+
+
+#banner .banner-title {
+    font-size: 9rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-shadow: 0 0 20px #fff;
+    position: relative;
+    top: -80px;
+    color: #35b0ae
+}
+
+#banner .banner-subtitle {
+    font-size: 1.8rem;
+    margin-top: 0;
+    text-shadow: 2px 2px 2px rgba(50, 50, 50, 0.75)
+}
+
+#banner .banner-lang a {
+    color: #ccc;
+    text-decoration: underline
+}
+
+#intro {
+    width: 100%;
+    position: relative;
+    color: #fcfcfc;
+    background-image: linear-gradient(to top right, #4ecac8, #2291cd);
+    z-index: 10
+}
+
+#intro .scroll-entry {
+    width: 200%;
+    height: 100%;
+    background-image: linear-gradient(to top right, #4ecac8, #2291cd);
+    position: absolute;
+    top: -25%;
+    left: -50%;
+    z-index: -1;
+    opacity: 0.8
+}
+
+#intro .scroll-entry.scroll-entry-left {
+    -webkit-transform: skewY(15deg);
+    transform: skewY(15deg)
+}
+
+#intro .scroll-entry.scroll-entry-right {
+    -webkit-transform: skewY(-15deg);
+    transform: skewY(-15deg)
+}
+
+#intro .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    z-index: 20
+}
+
+#intro .container h5 {
+    font-weight: bold;
+    text-align: center
+}
+
+#intro .container p {
+    text-align: justify;
+    color: #f3f3f3
+}
+
+.subtitle {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 250px;
+    height: 42px;
+    text-align: center;
+    font-weight: bold;
+    position: relative
+}
+
+.subtitle:before {
+    content: " ";
+    height: 42px;
+    width: 22.50772px;
+    background: #fff;
+    left: -6px;
+    top: 0%;
+    position: absolute;
+    -webkit-transform: skew(-15deg);
+    transform: skew(-15deg)
+}
+
+.subtitle:after {
+    content: " ";
+    height: 42px;
+    width: 22.50772px;
+    background: #fff;
+    right: -5px;
+    top: 0%;
+    position: absolute;
+    -webkit-transform: skew(-15deg);
+    transform: skew(-15deg)
+}
+
+#news {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    padding-top: 80px;
+    margin-bottom: 50px;
+    background-color: #fff
+}
+
+#news .news-subtitle {
+    background-image: linear-gradient(to top right, #4ecac8, #2291cd);
+    color: #fcfcfc;
+    margin-bottom: 50px
+}
+
+#news .container .news-row {
+    clear: both;
+    padding-bottom: 20px
+}
+
+#news .container .date {
+    float: left;
+    background-color: #35b0ae;
+    color: #fcfcfc;
+    width: 80px;
+    height: 60px;
+    position: relative;
+    padding-top: 5px;
+    padding-right: 5px
+}
+
+#news .container .date h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 0 0.5rem -0.5rem
+}
+
+#news .container .date h5 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin: -0.5rem 0 0 -0.5rem
+}
+
+#news .container .date:after {
+    content: " ";
+    height: 0;
+    width: 0;
+    right: -8.03847px;
+    position: absolute;
+    top: 0%;
+    border-right: 16.07694px solid #fff;
+    border-bottom: 60px solid #fff;
+    -webkit-transform: skew(-15deg);
+    transform: skew(-15deg)
+}
+
+#news .container .news-type {
+    float: right;
+    background-color: #2291cd;
+    color: #fcfcfc;
+    width: 130px;
+    height: 60px;
+    padding-top: 23px;
+    padding-left: 5px;
+    position: relative;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 0
+}
+
+#news .container .news-type:before {
+    content: " ";
+    height: 0;
+    width: 0;
+    left: -8.03847px;
+    top: 0%;
+    position: absolute;
+    border-top: 60px solid #fff;
+    border-left: 16.07694px solid #fff;
+    -webkit-transform: skew(-15deg);
+    transform: skew(-15deg)
+}
+
+#news .container .news-content {
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: left;
+    color: #555;
+    min-height: 60px;
+    padding-top: 0.5rem
+}
+
+#news .container .news-content p {
+    font-size: 1.5rem;
+    margin: 0
+}
+
+#news-page .news-group {
+    margin-bottom: 20px
+}
+
+#news-page .news-group .news-category {
+    color: #005299;
+    text-align: right;
+    font-weight: bold
+}
+
+#contact {
+    width: 100%;
+    position: relative;
+    font: OpenSans;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to top right, #4ecac8, #2291cd)
+}
+
+#contact .contact-subtitle {
+    width: 205px;
+    background-color: #fff;
+    color: #2291cd;
+    margin-bottom: 0px
+}
+
+#contact a {
+    color: #f3f3f3
+}
+
+#contact img {
+    margin-top: 30px;
+    margin-bottom: 20px
+}
+
+#contact h5 {
+    color: #fcfcfc;
+    margin-top: 0
+}
+
+#publications-page .publications-year {
+    text-align: center;
+    color: #999
+}
+
+#publications-page .year {
+    margin-bottom: 80px
+}
+
+#publications-page .year .publications-group {
+    margin-bottom: 20px
+}
+
+#publications-page .year .publications-group .publications-content {
+    color: #555
+}
+
+#publications-page .year .publications-group .publications-conference {
+    color: #999
+}
+
+.personal-page .personal-brief {
+    text-align: center
+}
+
+.personal-page .personal-brief img {
+    border-radius: 100px;
+    margin-bottom: 20px;
+    width: 200px;
+    transition: 0.5s
+}
+
+.personal-page .personal-brief img:hover {
+    border-radius: 0
+}
+
+.personal-page .personal-brief h2, .personal-page .personal-brief h4 {
+    margin: 0
+}
+
+.personal-page .personal-brief h4 {
+    color: #999
+}
+
+@media screen and (max-width: 768px) {
+    #news-page .news-group .news-category {
+        text-align: left
+    }
+
+    .personal-page .personal-detail h2 {
+        text-align: center
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #news .container .date {
+        clear: both
+    }
+
+    #news .container .news-content {
+        clear: both;
+        display: block;
+        margin-left: 0px;
+        margin-right: 0px;
+        text-align: left;
+        color: #999;
+        min-height: 60px
+    }
+}
