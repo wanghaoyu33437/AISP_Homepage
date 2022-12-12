@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <!-- saved from url=(0042)https://ipads.se.sjtu.edu.cn/zh/projects/# -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html><head>
+        <title>AISP-Projects</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,23 +56,23 @@
     <h1>Projects</h1>
     <hr>
     <section class="projects-section">
+        {% for project in projects %}
          <div class="row">
           <div class="col-xs-6 col-sm-4 col-md-3 project-group">
-                <a href="#">
-                    <img id="project0-img" src="{{ url_for('static',filename='images/projects/pig.png') }}">
+                <a href="{{ project.url }}">
+                    <img id="project0-img" src="{{ url_for('static',filename='images/projects/'+project.img+'.png') }}">
                 </a>
                 <div class="project-name">
-                    <a href="#">ML FeedPig</a>
+                    <a href="{{ project.url }}">{{ project.project_name }}</a>
                 </div>
-                <div class="project-title">Leveraging Intel Processor Trace for Control Flow Integrity</div>
+                <div class="project-title">{{ project.content }}</div>
             </div>          
 
         </div>
+        {% endfor %}
     </section>
 
 </div>
-
-    
 
 
 </body><div style="all: initial;"><div id="__hcfy__" style="all: initial;"></div></div></html>

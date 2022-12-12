@@ -2,6 +2,7 @@
 <!-- saved from url=(0045)https://ipads.se.sjtu.edu.cn/zh/publications/ -->
 <html>
 <head>
+        <title>AISP-Publications</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,26 +60,24 @@
     <hr>
     <a class="col-xs-6" href="{{ url_for('publications') }}">Full List</a>
     <br><br>
-    <label class="col-xs-4" style="color: #2291cd;"><input name="Adversarial_Mathine_Learning" type="checkbox"
-                                                           value="Adversarial_Mathine_Learning" checked="checked"
-                                                           onclick="checkboxOnclick(this)">Adversarial Mathine Learning</label>
-    <label class="col-xs-4" style="color: #2291cd;"><input style="color: #2291cd;" name="Federated_Learning"
-                                                           type="checkbox" value="Federated_Learning" checked="checked"
-                                                           onclick="checkboxOnclick(this)">Federated Learning</label>
-    <label class="col-xs-4" style="color: #2291cd;"><input name="Differential_Privacy" type="checkbox"
-                                                           value="Differential_Privacy" checked="checked"
-                                                           onclick="checkboxOnclick(this)">Differential Privacy</label>
+    {% for tag in tags %}
+         <label class="col-xs-4" style="color: #2291cd;"><input name="{{ tag }}" type="checkbox"
+                                                           value="{{ tag }}" checked="checked"
+                                                           onclick="checkboxOnclick(this)">{{ tag.replace('_',' ') }}</label>
+    {% endfor %}
     <br><br><br><br>
     <div>
-
         <hr>
     </div>
     {% for year in years %}
     <div class="year">
-
         <h3 class="publications-year">{{ year }}</h3>
         {% for pub in publications[year] %}
-        <div class="row publications-group tag-{{ pub.tag }} Virtualization">
+        <div class="row publications-group
+        {% for tag in pub.tag %}
+        tag-{{ tag }}
+         {% endfor %}
+         Virtualization">
             <div class="col-xs-12 col-sm-2">
 
                 {% for a in pub.authors %}
@@ -109,25 +108,19 @@
     function checkboxOnclick(checkbox) {
         var name = checkbox.value;
         var ele_tag = "";
-        if (name == "Adversarial_Mathine_Learning") {
+        ele_tag = '.tag-'+name
+   {#     if ("Adversarial_Mathine_Learning" in name) {
             ele_tag = ".tag-Adversarial_Mathine_Learning";
-        } else if (name == "Federated_Learning") {
+        } else if ("Federated_Learning" in name) {
             ele_tag = ".tag-Federated_Learning";
-        } else if (name == "Multicore_Systems") {
-            ele_tag = ".tag-Multicore";
+        } else if (name == "Differential_Privacy") {
+            ele_tag = ".tag-Differential_Privacy";
         } else if (name == "Security_and_Privacy") {
             ele_tag = ".tag-Security";
-        } else if (name == "Programming_Languages") {
-            ele_tag = ".tag-Programming";
-        } else if (name == "Verification") {
-            ele_tag = ".tag-Verification";
-        } else if (name == "Cloud_Computing") {
-            ele_tag = ".tag-Cloud";
-        } else if (name == "Operating_Systems") {
-            ele_tag = ".tag-Operating";
-        } else if (name == "Mobile_Systems") {
-            ele_tag = ".tag-Mobile";
         }
+        else if (name == "3D_Points") {
+            ele_tag = ".tag-3D_Points";
+        }#}
         $(ele_tag).prop("hidden", !checkbox.checked);
         $(".year").each(function () {
             // if  publications-group all hidden then self hidden

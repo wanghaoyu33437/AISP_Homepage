@@ -14,16 +14,21 @@ db.init_app(app)
 
 @app.errorhandler(404)  # 传入错误码作为参数状态
 def error_date(error):  # 接受错误作为参数
+    if request.path.startswith('/manage'):
+        return
     return render_template('404.html'),404
 @app.errorhandler(500)  # 传入错误码作为参数状态
 def error_date(error):  # 接受错误作为参数
-    return render_template('500.html'),404
+    if request.path.startswith('/manage'):
+        return
+    return render_template('500.html'),500
 
 @app.before_request
 def before_user():
     if request.path.startswith("/static"):
         return None
     if request.path.startswith("/manage"):
+        print(session.get("username"))
         if not session.get("username"):
             return redirect(url_for('admin.admin'))
 

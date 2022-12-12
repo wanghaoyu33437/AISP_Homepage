@@ -2,6 +2,7 @@
 <!-- saved from url=(0040)https://ipads.se.sjtu.edu.cn/zh/members/ -->
 <html>
 <head>
+        <title>AISP-People</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,7 +70,7 @@
             {% else %}"col-xs-6 col-sm-4 col-md-2 member-group" style="float:none;margin: auto;display: inline-block "
             {% endif %}>
                 <a href="{{ teacher.url }}">
-                    <img id="{{ teacher.img }}-img" src={{ url_for("static",filename='images/members/'+teacher.img+'.png') }}>
+                    <img id="{{ teacher.img }}-img" src={{ url_for("static",filename='images/members/'+teacher.en_name+'.png') }}>
                 </a>
                 <div class="member-name">
                     <a href="{{ teacher.url }}">{{ teacher.name }}</a>
@@ -96,7 +97,7 @@
             {% else %}"col-xs-6 col-sm-4 col-md-2 member-group" style="float:none;margin: auto;display: inline-block "
             {% endif %}>
                 <a href="{{ phd.url }}">
-                    <img id="{{ phd.img }}-img" src="{{ url_for("static",filename='images/members/'+phd.img +'.png') }}">
+                    <img id="{{ phd.img }}-img" src="{{ url_for("static",filename='images/members/'+phd.en_name +'.png') }}">
                 </a>
                 <div class="member-name">
                     <a href="#">{{ phd.name }}</a>
@@ -118,7 +119,7 @@
             {% else %}"col-xs-6 col-sm-4 col-md-2 member-group" style="float:none;margin: auto;display: inline-block "
             {% endif %}>
                 <a href="/members?name={{ ms.url }}">
-                    <img id="{{ ms.img }}-img" src="{{ url_for("static",filename='images/members/'+ms.img+'.png') }}">
+                    <img id="{{ ms.img }}-img" src="{{ url_for("static",filename='images/members/'+ms.en_name+'.png') }}">
                 </a>
                 <div class="member-name">
                     <a href="#">{{ ms.name }}</a>
@@ -142,7 +143,7 @@
             {% else %}"col-xs-6 col-sm-4 col-md-2 member-group" style="float:none;margin: auto;display: inline-block "
             {% endif %}>
                 <a href="{{ bs.url }}">
-                    <img id="{{ bs.img }}-img" src={{ url_for("static",filename='images/members/'+bs.img+'.png') }}>
+                    <img id="{{ bs.img }}-img" src={{ url_for("static",filename='images/members/'+bs.en_name+'.png') }}>
                 </a>
                 <div class="member-name">
                     <a href="{{ bs.url }}">{{ bs.name }}</a>
@@ -165,7 +166,7 @@
             {% else %}"col-xs-6 col-sm-4 col-md-2 member-group" style="float:none;margin: auto;display: inline-block "
             {% endif %}>
                 <a href="{{ xy.url }}">
-                    <img id="{{ xy.img }}-img" src={{ url_for("static",filename='images/members/'+xy.img+'.png') }}>
+                    <img id="{{ xy.img }}-img" src={{ url_for("static",filename='images/members/'+xy.en_name+'.png') }}>
                 </a>
                 <div class="member-name">
                     <a href="{{ xy.url }}">{{ xy.name }}</a>

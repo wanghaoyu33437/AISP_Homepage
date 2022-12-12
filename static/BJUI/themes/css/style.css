@@ -300,7 +300,7 @@ td[align=right] input{text-align:right;}
 #bjui-navtab > .tabsMoreList > li a{display:block; padding:0 10px; height:21px; white-space:nowrap; line-height:21px;}
 #bjui-navtab > .tabsMoreList > li a:hover{text-decoration:none;}
 #bjui-navtab > .tabsPageContent{position:relative; display:block; overflow:hidden; border-style:solid; border-width:0 1px 1px 1px;}
-#bjui-navtab > .tabsPageContent > .navtabPage{height:100%; overflow:hidden;}
+#bjui-navtab > .tabsPageContent > .navtabPage{height:100%; overflow:auto;}
 /* Dialog */
 .bjui-dialog{position:absolute; display:block; text-align:left; border-radius:3px; box-shadow:0 2px 2px rgba(0, 0, 0, 0.3);}
 .bjui-dialog > .dialogHeader{position:relative; padding:0 5px; cursor:move;}

@@ -68,7 +68,17 @@ class Publications(db.Model):
         publications = Publications.query.order_by(Publications.create_time.desc()).all()
         return publications
 
-
+class Project(db.Model):
+    __tablename__ = 'project'
+    id = db.Column(db.Integer, primary_key=True, )
+    project_name = db.Column(db.VARCHAR, )
+    content = db.Column(db.VARCHAR, )
+    img = db.Column(db.VARCHAR)
+    def __init__(self, project_name,content,img,url):
+        self.project_name = project_name
+        self.content = content
+        self.img = img
+        self.url = url
 class Admin(db.Model):
     __tablename__ = 'admin'
     id = db.Column(db.Integer, primary_key=True)
